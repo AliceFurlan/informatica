@@ -14,9 +14,9 @@
        $classici = array("Burro", "Burro e salvia", "Pomodoro e basilico", "Aglio, olio e peperoncino", "Carbonara");
        $carne = array("Ragù classico", "Pomodoro e salsiccia", "Pomodoro e pancetta");
        $pesce = array("Pomodoro e tonno", "Panna e salmone", "Gamberetti e zucchine", "Pasta allo scoglio", "Cozze e vongole");
-       $pesto = array("Pesto alla genovese", "Pesto di verdure", "Pesto di pistacchi", "Pesto di pomodori secchi")
+       $pesto = array("Pesto alla genovese", "Pesto di verdure", "Pesto di pistacchi", "Pesto di pomodori secchi");
 
-       echo "Classici, Carne, Pesce, Pesto"<br>;
+       echo "Classici, carne, pesce, pesto <br>";
 
        foreach($classici as $item)
        {
