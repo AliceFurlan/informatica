@@ -36,45 +36,47 @@
   </div>
 </nav>
 
-        <h1>Tipi di pasta</h1>
+        <h1>Sughi per pasta</h1>
 
         <?php
-       $classici = array("Burro", "Burro e salvia", "Pomodoro e basilico", "Aglio, olio e peperoncino", "Carbonara");
-       $carne = array("Ragù classico", "Pomodoro e salsiccia", "Pomodoro e pancetta");
-       $pesce = array("Pomodoro e tonno", "Panna e salmone", "Gamberetti e zucchine", "Pasta allo scoglio", "Cozze e vongole");
-       $pesto = array("Pesto alla genovese", "Pesto di verdure", "Pesto di pistacchi", "Pesto di pomodori secchi");
+       $pasta = array(array("Titolo" => "Classici", "Categoria" => "Burro <br> Burro e salvia <br> Pomodoro e basilico <br> Aglio, olio e peperoncino <br> Carbonara"), array("Titolo" => "Ragù", "Categoria" => "Ragù classico <br> Pomodoro e salsiccia <br> Pomodoro e pancetta"), array("Titolo" => "Pesce", "Categoria" => "Pomodoro e tonno <br> Panna e salmone <br> Gamberetti e zucchine <br> Pasta allo scoglio <br> Cozze e vongole"), array("Titolo" => "Pesto", "Categoria" => "Pesto alla genovese <br> Pesto di verdure <br> Pesto di pistacchi <br> Pesto di pomodori secchi"));
        ?>
 
         <h2>Classici, carne, pesce, pesto</h2>
         <hr align="left" size="1" width="700" color="black">
 
-
+        <table>
+          <tr>
        <?php
-
-       echo "<h4>CLASSICI </h4>";
-       foreach($classici as $item)
+       foreach($pasta as $item)
        {
-            echo "<h3>$item</h3>";
-       }
-
-       echo "<br><h4> CARNE </h4>";
-       foreach($carne as $item)
-       {
-            echo "<h3>$item</h3>";
-       }
-
-       echo "<br><h4> PESCE </h4>";
-       foreach($pesce as $item)
-       {
-            echo "<h3>$item</h3>";
-       }
-
-       echo "<br><h4> PESTO </h4>";
-       foreach($pesto as $item)
-       {
-            echo "<h3>$item</h3>";
+            echo "<br><h4>$item[Titolo]</h4>";
+            echo "<h3>$item[Categoria]</h3>";
        }
         ?>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </table>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
@@ -97,13 +99,12 @@
     h3{
         font-size:15px;
         margin-left: 4cm;
-        font-style: italic;
+        font-style: bold;
     }
 
     h4{
-        font-size:15px;
+        font-size:20px;
         margin-left: 4cm;
-        margin-top: 0,5cm;
         font-style: italic;
     }
 
