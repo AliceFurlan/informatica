@@ -46,31 +46,33 @@
        ?>
 
         <h2>Classici, carne, pesce, pesto</h2>
+        <hr align="left" size="1" width="700" color="black">
+
 
        <?php
 
-       echo "CLASSICI <br>";
+       echo "<h4>CLASSICI </h4>";
        foreach($classici as $item)
        {
-            echo "$item <br>";
+            echo "<h3>$item</h3>";
        }
 
-       echo "<br> CARNE <br>";
+       echo "<br><h4> CARNE </h4>";
        foreach($carne as $item)
        {
-            echo "$item <br>";
+            echo "<h3>$item</h3>";
        }
 
-       echo "<br> PESCE <br>";
+       echo "<br><h4> PESCE </h4>";
        foreach($pesce as $item)
        {
-            echo "$item <br>";
+            echo "<h3>$item</h3>";
        }
 
-       echo "<br> PESTO <br>";
+       echo "<br><h4> PESTO </h4>";
        foreach($pesto as $item)
        {
-            echo "$item <br>";
+            echo "<h3>$item</h3>";
        }
         ?>
 
@@ -81,14 +83,27 @@
 <style>
     h1{
         font-size:40px;
-        margin-left: 4cm;
+        margin-left: 7cm;
         margin-top: 1cm;
     }
 
     h2{
         font-size:25px;
-        margin-left: 4cm;
+        margin-left: 7cm;
         margin-top: 0,1cm;
+        font-style: italic;
+    }
+
+    h3{
+        font-size:15px;
+        margin-left: 4cm;
+        font-style: italic;
+    }
+
+    h4{
+        font-size:15px;
+        margin-left: 4cm;
+        margin-top: 0,5cm;
         font-style: italic;
     }
 
