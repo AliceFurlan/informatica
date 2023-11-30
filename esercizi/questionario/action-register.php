@@ -11,6 +11,7 @@
     <div class="container">
 
         <h1>Risposte del Form</h1>
+        <h2>Ciao</h2>
 
         <table class="table">
             <thead>
@@ -35,3 +36,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
+
+<style>
+    h1{
+        font-size:40px;
+        text-align: center;
+        margin-top: 1cm;
+        color:green;
+    }
+
+    h2{
+        font-size:25px;
+        text-align: center;
+        margin-top: 0,1cm;
+        font-style: italic;
+        color:rgb(172, 255, 31);
+    }
+
+</style>
