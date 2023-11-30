@@ -10,22 +10,34 @@
     <body>
       <div class="container">
 
-    <h1> Form molto semplice </h1>
+    <h1>Form</h1>
+    <h2>Ciao</h2>
 
     <form action="./action-register.php">
-      <label for="fname">First name:</label><br>
+      <label for="fname">Nome:</label><br>
       <input type="text" id="fname" name="fname"><br>
 
-      <label for="lname">Last name:</label><br>
+      <label for="lname">Cognome:</label><br>
       <input type="text" id="lname" name="lname"><br>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-
-      <label for="age">Age:</label><br>
+      <label for="age">Età:</label><br>
       <input type="number" id="age" name="age"><br>
+      
+      <label for="birthdate">Data di nascita:</label><br>
+      <input type="date" id="birthdate" name="birthdate"><br>
 
-      <input type="submit" />
+      <label for="sport">Sport preferito:</label><br>
+      <input type="text" id="sport" name="sport"><br>
+
+      <label for="psw">Password:</label><br>
+      <input type="password" id="psw" name="psw"><br>
+
+    <?php
+    if($_GET['psw']=='info2023'){
+
+    }
+    ?>
+
 
     </form>
   </div>
