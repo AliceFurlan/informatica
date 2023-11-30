@@ -39,14 +39,14 @@
         <h1>Sughi per pasta</h1>
 
         <?php
-       $pasta = array(array("Titolo" => "Classici", "Categoria" => "Burro <br> Burro e salvia <br> Pomodoro e basilico <br> Aglio, olio e peperoncino <br> Carbonara"), array("Titolo" => "Ragù", "Categoria" => "Ragù classico <br> Pomodoro e salsiccia <br> Pomodoro e pancetta"), array("Titolo" => "Pesce", "Categoria" => "Pomodoro e tonno <br> Panna e salmone <br> Gamberetti e zucchine <br> Pasta allo scoglio <br> Cozze e vongole"), array("Titolo" => "Pesto", "Categoria" => "Pesto alla genovese <br> Pesto di verdure <br> Pesto di pistacchi <br> Pesto di pomodori secchi"));
+       $pasta = array(array("Titolo" => "Classici", "Categoria" => "Burro <br> Burro e salvia <br> Pomodoro e basilico <br> Aglio, olio e peperoncino <br> Carbonara"), array("Titolo" => "Carne", "Categoria" => "Ragù classico <br> Pomodoro e salsiccia <br> Pomodoro e pancetta"), array("Titolo" => "Pesce", "Categoria" => "Pomodoro e tonno <br> Panna e salmone <br> Gamberetti e zucchine <br> Pasta allo scoglio <br> Cozze e vongole"), array("Titolo" => "Pesto", "Categoria" => "Pesto alla genovese <br> Pesto di verdure <br> Pesto di pistacchi <br> Pesto di pomodori secchi"));
        ?>
 
         <h2>Classici, carne, pesce, pesto</h2>
         <hr align="left" size="1" width="700" color="black">
 
         <table>
-          <tr>
+          <td>
        <?php
        foreach($pasta as $item)
        {
@@ -54,17 +54,19 @@
             echo "<h3>$item[Categoria]</h3>";
        }
         ?>
+          </td>
 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <td>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width:400px">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2022/07/PASTA-CON-PESTO-DI-POMODORINI_SITO-4_INTRO.jpg" class="d-block w-100" alt="pasta al pomodoro e basilico">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2021/04/SITO-.-15-Pasta-con-sugo-di-pesce-spada.jpg" class="d-block w-100" alt="pasta con pesce">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2022/07/AdobeStock_235021478-1200x900.jpg" class="d-block w-100" alt="pasta con pesto">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -76,6 +78,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+      </td>
       </table>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
