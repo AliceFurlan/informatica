@@ -13,8 +13,6 @@
     <h1>Form</h1>
     <h2>Inserisci i seguenti dati</h2><br>
 
-    
-
   <table>
     <tr>
       <td>
@@ -40,10 +38,11 @@
       <label for="color">Seleziona il colore della pagina successiva:</label>
       <input type="color" id="color" name="colore"><br><br>
 
+      <input type="hidden" value="info2023" name="hidden">
       <input type="submit" value="invia"><br><br>
-
     </form>
       </td>
+
       <td align="right">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -69,7 +68,6 @@
       </td>
     </tr>
   </table>
-
   </div>
   
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
