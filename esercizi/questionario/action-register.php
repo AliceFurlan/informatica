@@ -8,10 +8,10 @@
     </head> 
 
     <body>
-    <div class="container">
+    <div class="container" align="center">
 
         <h1>Risposte del Form</h1>
-        <h2>Ciao</h2>
+        <h2>Ciao <?php echo $_GET['nome'] ?> </h2>
 
         <table class="table">
             <thead>
@@ -42,7 +42,7 @@
         font-size:40px;
         text-align: center;
         margin-top: 1cm;
-        color:green;
+        color:black;
     }
 
     h2{
@@ -50,10 +50,14 @@
         text-align: center;
         margin-top: 0,1cm;
         font-style: italic;
-        color:rgb(172, 255, 31);
+        color:black;
     }
 
     body{
-        background-color: <?= $_GET['color']?>;
+        background-color: <?= $_GET['colore']?>;
     }
+
+   .table{
+        width: 50%;
+   }
 </style>
