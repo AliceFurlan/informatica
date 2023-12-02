@@ -53,4 +53,7 @@
         color:rgb(172, 255, 31);
     }
 
+    body{
+        background-color: <?= $_GET['color']?>;
+    }
 </style>
