@@ -12,6 +12,7 @@
 
 <body>
     <div class="ct-chart" id="myChart"></div>
+    <? require './raccolta_dati.php'; ?>    
     <script>
         // Esempio di dati PHP
         var phpData = file_get_contents('raccolta_dati.php');
